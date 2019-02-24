@@ -2,6 +2,7 @@ import helpers.Reader;
 import implementations.BalancedTreeSymbolTable;
 import implementations.HashedSymbolTree;
 import implementations.LinkedSymbolTable;
+import implementations.RedBlackTree;
 
 public class Main {
 
@@ -12,7 +13,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        testBalancedTreeSymbolTable();
+        testRedBlackTree();
     }
 
     public static void testLinkedSymbolTable() {
@@ -49,6 +50,18 @@ public class Main {
             tree.getRoot().insert(temp[i]);
         }
         tree.drawTree();
+    }
+
+    public static void testRedBlackTree() {
+        RedBlackTree tree = new RedBlackTree(); 
+
+        tree.insert(7); 
+        tree.insert(6); 
+        tree.insert(5); 
+        tree.insert(4); 
+        tree.insert(3); 
+        tree.insert(2); 
+        tree.insert(1); 
     }
 
 }
