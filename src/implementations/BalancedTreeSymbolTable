@@ -65,7 +65,7 @@ public class BalancedTreeSymbolTable {
         }
 
         public void rotateLeft() {
-            // 1) Get "This"'s Right Childs' Left node (We will be attaching it to the "This"'s Left side)
+            // 1) Get "This"'s Right Childs' Left node (We will be attaching it to the "This"'s Right side)
             Node leftTemp = null;
             if (this.right != null && this.right.left != null) {
                 leftTemp = this.right.left;
